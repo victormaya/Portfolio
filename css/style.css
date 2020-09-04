@@ -1,0 +1,149 @@
+body{
+    background: black;
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    animation: backwards top 2s;
+    animation-delay: 5s;
+}
+.nav img:nth-child(even){
+    margin-left: 16px;
+}
+
+.capa{
+    display: flex;
+    align-items: center;
+}
+
+.capa img{
+    padding-top: 50px;
+    animation: anime-capa 2s;
+}
+
+.texto{
+    text-align: center;
+    animation: backwards anime-capa 2s;
+    animation-delay: 1s;
+}
+
+h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    color: white;
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cards{
+    top: -80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    
+}
+
+.names{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    color: #7A49A3;
+}
+.names p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5;
+}
+
+.cards img:nth-child(1){
+    animation: backwards card 2s;
+    animation-delay: 1.5s;    
+}
+.cards img:nth-child(2){
+    animation: backwards card 2s;
+    animation-delay: 2s;    
+}
+
+.cards img:nth-child(3){
+    animation: backwards card 2s;
+    animation-delay: 2.5s;    
+}
+
+.cards img:nth-child(4){
+    animation: backwards card 2s;
+    animation-delay: 3s;    
+}
+
+.names p:nth-child(1){
+    margin-left: 32px;
+    margin-right: 230px;
+    animation: backwards card 2s;
+    animation-delay: 1.5s;
+}
+.names p:nth-child(2){
+    margin-right: 227px;
+    animation: backwards card 2s;
+    animation-delay: 2s;    
+}
+.names p:nth-child(3){
+    margin-right: 194px;
+    animation: backwards card 2s;
+    animation-delay: 2.5s;    
+}
+.names p:nth-child(4){
+    animation: backwards card 2s;
+    animation-delay: 3s;    
+}
+
+/*animação top*/
+
+@keyframes top{
+    from{
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/*animacoes cards*/
+@keyframes card{
+    from{
+        transform: translatey(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/*animacoes capa*/
+
+@keyframes anime-capa{
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
