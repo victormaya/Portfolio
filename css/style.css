@@ -1,6 +1,5 @@
 body{
     background: black;
-    overflow: hidden;
 }
 
 .nav{
@@ -10,11 +9,12 @@ body{
     animation: backwards top 2s;
     animation-delay: 5s;
 }
-.nav img:nth-child(even){
+.nav a:nth-child(even){
     margin-left: 16px;
 }
 
 .capa{
+    top: -40px;
     display: flex;
     align-items: center;
 }
@@ -46,7 +46,7 @@ h1{
 }
 
 .cards{
-    top: -80px;
+    top: -130px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -56,8 +56,9 @@ h1{
 
 .names{
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 5px;
     color: #7A49A3;
 }
 .names p{
@@ -87,18 +88,16 @@ h1{
 }
 
 .names p:nth-child(1){
-    margin-left: 32px;
-    margin-right: 230px;
+    
     animation: backwards card 2s;
     animation-delay: 1.5s;
 }
 .names p:nth-child(2){
-    margin-right: 227px;
+    
     animation: backwards card 2s;
     animation-delay: 2s;    
 }
 .names p:nth-child(3){
-    margin-right: 194px;
     animation: backwards card 2s;
     animation-delay: 2.5s;    
 }
@@ -106,7 +105,19 @@ h1{
     animation: backwards card 2s;
     animation-delay: 3s;    
 }
+#direita{
+    display: flex;
+    justify-content: space-between;
+    width: 314px;
 
+}
+#esquerda{
+    display: flex;
+    justify-content: space-between;
+    width: 396px;
+    margin-left: 33px;
+
+}
 /*animação top*/
 
 @keyframes top{
