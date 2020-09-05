@@ -34,7 +34,7 @@
     justify-content: center;
     margin-top: 10px;
     animation: backwards top 2s;
-    animation-delay: 5s;
+    animation-delay: 0s;
 	}
 	.capa{
 		flex-direction: column;

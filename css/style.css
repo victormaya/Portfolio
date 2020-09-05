@@ -87,21 +87,21 @@ h1{
     animation-delay: 3s;    
 }
 
-.names p:nth-child(1){
+.names #esquerda p:nth-child(1){
     
     animation: backwards card 2s;
     animation-delay: 1.5s;
 }
-.names p:nth-child(2){
+.names #esquerda p:nth-child(2){
     
     animation: backwards card 2s;
     animation-delay: 2s;    
 }
-.names p:nth-child(3){
+.names #direita p:nth-child(1){
     animation: backwards card 2s;
     animation-delay: 2.5s;    
 }
-.names p:nth-child(4){
+.names #direita p:nth-child(2){
     animation: backwards card 2s;
     animation-delay: 3s;    
 }
