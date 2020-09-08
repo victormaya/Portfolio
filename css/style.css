@@ -8,6 +8,7 @@ body{
     margin-top: 10px;
     animation: backwards top 2s;
     animation-delay: 5s;
+    z-index: 100;
 }
 .nav a:nth-child(even){
     margin-left: 16px;
